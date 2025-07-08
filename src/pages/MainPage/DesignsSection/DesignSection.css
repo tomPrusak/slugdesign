@@ -1,0 +1,27 @@
+.bubles {
+	border-radius: 50%;
+	opacity: 0.9;
+	transition: 0.5s;
+	height: 400px;
+	width: 400px;
+	margin: 20px 0px;
+	text-align: center;
+	vertical-align: middle;
+	background: rgba(255, 255, 255, 0.05);
+	position: relative;
+	border: 1px solid rgba(225, 255, 255, 0.05);
+}
+
+.bubles::after,
+.bubles::before {
+	position: absolute;
+	content: '';
+	width: 150px;
+	height: 70px;
+	top: 25px;
+	right: 50px;
+	background: center top,
+		linear-gradient(rgba(225, 235, 171, 0.1) 20%, rgba(255, 255, 255, 0) 60%);
+	border-radius: 50%;
+	transform: rotate(25deg);
+}
