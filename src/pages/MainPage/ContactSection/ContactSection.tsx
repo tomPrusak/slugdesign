@@ -18,6 +18,7 @@ function ContactSection() {
 					image={{ src: repeatUnderWater }}
 					settings={{
 						height: '286px',
+						zIndex: 20,
 					}}></RepeatingBlock>
 				<div className=" relative z-40 top-[20px] px-5">
 					<div className="row flex">
@@ -38,8 +39,11 @@ function ContactSection() {
 				image={{ src: repeatFloor }}
 				settings={{
 					height: '40px',
+					zIndex: 20,
 				}}></RepeatingBlock>
-			<RepeatingBlock image={{ src: repeatNoise }}>
+			<RepeatingBlock
+				image={{ src: repeatNoise }}
+				settings={{ zIndex: 20 }}>
 				<section className="text-center p-20">
 					<h3>Let's make something great together</h3>
 					<p>Get in touch with us and send some basic info for a quick quote</p>

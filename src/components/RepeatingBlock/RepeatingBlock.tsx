@@ -9,9 +9,8 @@ function RepeatingBlock({ image, children, settings }: RepeatingProps) {
 			style={{
 				backgroundImage: `url('${image.src}')`,
 				backgroundColor: `${image.bgColor}`,
-				padding: settings?.padding,
 				height: settings?.height,
-				zIndex: settings?.index,
+				zIndex: settings?.zIndex,
 				top: settings?.top,
 			}}>
 			{children}

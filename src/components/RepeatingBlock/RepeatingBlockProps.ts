@@ -8,8 +8,7 @@ export interface RepeatingProps {
 	};
 	settings?: {
 		height?: string;
-		padding?: string;
-		index?: number;
+		zIndex?: number;
 		positionAbsolute?: boolean;
 		top?: string;
 		flipImg?: boolean;

@@ -11,17 +11,6 @@ function App() {
 
 	return (
 		<Fragment>
-			{/* <h1 className="underline">some sample o text</h1>
-			<h2>
-				Improve <br />
-				Your Website <br />
-				Visuality <br />
-				& Online <br />
-				Visibility
-				<span>Tomek</span>
-			</h2>
-			<button className="bg-red-300 text-white">Send Email</button>
-			<Button text="tomek"></Button> */}
 			<MainPage></MainPage>
 			<Footer></Footer>
 		</Fragment>

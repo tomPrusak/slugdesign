@@ -11,6 +11,7 @@ function Footer() {
 					height: '38px',
 					positionAbsolute: true,
 					top: '-38px',
+					zIndex: 50,
 				}}></RepeatingBlock>
 			<div className="bg-black text-center w-screen pt-[60px] pb-[20px]  ">
 				<p>
