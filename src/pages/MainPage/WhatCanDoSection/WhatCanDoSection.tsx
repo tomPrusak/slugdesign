@@ -1,7 +1,10 @@
 import Button from '../../../components/Button/Button';
+import ContentBlock from '../../../components/ContentBlock/ContentBlock';
+import type { ContentBlockProps } from '../../../components/ContentBlock/ContentBlockProps';
+import Hexagon from '../../../components/Hexagon/Hexagon';
 import RepeatingBlock from '../../../components/RepeatingBlock/RepeatingBlock';
 
-function WhatCanDoSection() {
+function WhatCanDoSection(props: ContentBlockProps) {
 	const repeatStonesKex = 'src/assets/images/repStoneKex.png';
 	const repeatKex = 'src/assets/images/main-page/repKex.png';
 	const repeatStalctics = 'src/assets/images/main-page/repStalactics.png';
@@ -11,18 +14,14 @@ function WhatCanDoSection() {
 			<RepeatingBlock
 				image={{ src: repeatStalctics }}
 				settings={{ height: '64px', zIndex: 20 }}></RepeatingBlock>
-			<div className="p-50 row flex">
-				<h2>What We Can Do For You?</h2>
-				<aside>
-					<p>
-						“ We can’t just design an item that looks great. We also have to
-						anticipate how it is boxed up, distributed, and shipped, as well as
-						whether or not a seventeen-year-old kid with a summer job can stock
-						it on the store shelf without ruining it “
-					</p>
-				</aside>
-			</div>
-			<Button text="Work With Us"></Button>
+
+			<ContentBlock
+				header={props.header}
+				subHeader={props.subHeader}>
+				<Hexagon content={props.content}></Hexagon>
+				<Button text="Work With Us"></Button>
+			</ContentBlock>
+
 			<RepeatingBlock
 				image={{ src: repeatKex }}
 				settings={{ height: '91px', zIndex: 20 }}></RepeatingBlock>

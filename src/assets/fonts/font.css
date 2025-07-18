@@ -6,7 +6,6 @@
   font-family: 'Dessau-Medium';
   src: local('Dessau-Medium'), url(./Dessau-Medium.ttf) format('truetype');
 }
-
 @font-face {
   font-family: 'Dessau-DemiBold';
   src: local('Dessau-DemiBold'), url(./Dessau-DemiBold.ttf) format('truetype');

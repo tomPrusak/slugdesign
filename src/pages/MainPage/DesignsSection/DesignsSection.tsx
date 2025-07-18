@@ -1,7 +1,9 @@
 import './DesignSection.css';
 import Button from '../../../components/Button/Button';
+import type { ContentBlockProps } from '../../../components/ContentBlock/ContentBlockProps';
+import ContentBlock from '../../../components/ContentBlock/ContentBlock';
 
-function DesignsSection() {
+function DesignsSection(props: ContentBlockProps) {
 	const bubleFire = 'src/assets/images/main-page/anBubleFire.png';
 	const breenSchool = 'src/assets/images/main-page/breenschool.jpg';
 	const allosales = 'src/assets/images/main-page/allosales.jpg';
@@ -10,21 +12,10 @@ function DesignsSection() {
 	return (
 		<div className="bg-gradient-to-t from-[#11708a] to-[#00a0b7] flex relative z-20">
 			<div className="column w-screen">
-				<section className="justify-start w-200 text-center">
-					<h2 className="">
-						Design, <br /> Development, Online <br /> advertising …
-					</h2>
-					<h3>
-						We Are Constantly Innovating, To Make A Better Website For You!
-					</h3>
-					<p>
-						At SlugDesign, we always take care to understand the business we are
-						representing, and we work closely with our clients to Build websites
-						to exact specifications. At SlugDesign will craft a contemporary and
-						unique website just for you.
-					</p>
-					<Button text="Want To See More?"></Button>
-				</section>
+				<ContentBlock
+					header={props.header}
+					subHeader={props.subHeader}
+					content={props.content}></ContentBlock>
 				<div className="row flex">
 					<div className="bubles flex items-center justify-center">
 						<figure>

@@ -1,3 +1,4 @@
+import Header from '../../../components/Header/Header';
 import RepeatingBlock from '../../../components/RepeatingBlock/RepeatingBlock';
 
 function WelcomeSection() {
@@ -10,6 +11,7 @@ function WelcomeSection() {
 				height: '646px',
 			}}>
 			<section className="row">
+				<Header></Header>
 				<div className="box-border w-[167px] h-[165px] absolute right-10 top-10 bg-[url(assets/images/main-page/sun.png)]"></div>
 				<div className="box-border w-full h-[157px] absolute top-35 bg-[url(assets/images/main-page/clouds.png)]"></div>
 			</section>
@@ -25,4 +27,3 @@ function WelcomeSection() {
 	);
 }
 export default WelcomeSection;
- 

@@ -3,8 +3,10 @@ import './MeetTheTeam.css';
 import RepeatingBlock from '../../../components/RepeatingBlock/RepeatingBlock';
 import Button from '../../../components/Button/Button';
 import { Fragment } from 'react/jsx-runtime';
+import type { ContentBlockProps } from '../../../components/ContentBlock/ContentBlockProps';
+import ContentBlock from '../../../components/ContentBlock/ContentBlock';
 
-function MeetTeamSection() {
+function MeetTeamSection(props: ContentBlockProps) {
 	const repeatStalactite = 'src/assets/images/main-page/repCaveStal.png';
 	const repeatStones = 'src/assets/images/repStone.png';
 	const repeatCaveMountain = 'src/assets/images/main-page/repCaveMountain.png';
@@ -13,13 +15,10 @@ function MeetTeamSection() {
 	return (
 		<Fragment>
 			<div className="row flex justify-center z-20 relative py-20 bg-[#20100c]">
-				<h1>Meet Our Team</h1>
-				<aside>
-					<h3>
-						Who are we? <br /> Some information about us.
-					</h3>
-					<h3>Contact us via or simply complete our contact form…</h3>
-				</aside>
+				<ContentBlock
+					header={props.header}
+					subHeader={props.subHeader}
+					content={props.content}></ContentBlock>
 			</div>
 			<RepeatingBlock image={{ src: repeatStones, bgColor: '#111010' }}>
 				<RepeatingBlock

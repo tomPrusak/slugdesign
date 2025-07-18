@@ -1,0 +1,36 @@
+.hexagon {
+	position: relative;
+	width: 250px;
+	height: 144.34px;
+	background-color: rgb(32, 16, 12);
+	cursor: pointer;
+	margin: 72px auto;
+	transition: 0.6s;
+	display: flex;
+	justify-content: center;
+}
+.hexagon::before,
+.hexagon::after {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: inherit;
+	box-sizing: border-box;
+}
+.hexagon::before {
+	transform: rotate(60deg);
+	left: 0px;
+	top: 0px;
+}
+.hexagon::after {
+	transform: rotate(-60deg);
+	left: 0px;
+	top: 0px;
+}
+
+
+/* .hexagon:nth-child(3),
+.hexagon:nth-child(4) {
+  row-gap: 10;
+} */

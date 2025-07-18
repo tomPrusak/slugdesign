@@ -1,8 +1,10 @@
 import RepeatingBlock from '../../../components/RepeatingBlock/RepeatingBlock';
 import Button from '../../../components/Button/Button';
 import { Fragment } from 'react/jsx-runtime';
+import type { ContentBlockProps } from '../../../components/ContentBlock/ContentBlockProps';
+import ContentBlock from '../../../components/ContentBlock/ContentBlock';
 
-function ContactSection() {
+function ContactSection(props: ContentBlockProps) {
 	const repeatNoise = 'src/assets/images/img-noise.png';
 	const repeatStones = 'src/assets/images/repStone.png';
 	const repeatFloor = 'src/assets/images/main-page/repFloor.jpg';
@@ -44,14 +46,10 @@ function ContactSection() {
 			<RepeatingBlock
 				image={{ src: repeatNoise }}
 				settings={{ zIndex: 20 }}>
-				<section className="text-center p-20">
-					<h3>Let's make something great together</h3>
-					<p>Get in touch with us and send some basic info for a quick quote</p>
-
-					<Button
-						text="Start The Business With Us"
-						color="#D9420B"></Button>
-				</section>
+				<ContentBlock
+					header={props.header}
+					subHeader={props.subHeader}
+					content={props.content}></ContentBlock>
 			</RepeatingBlock>
 		</Fragment>
 	);

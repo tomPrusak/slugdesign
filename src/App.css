@@ -10,16 +10,19 @@ body {
 @layer base {
 	/* ----------------------HEADERS STYLE------------------ */
 
-	h1 {
-		font-family: Dessau-Medium, Helvetica, Roboto, Arial, sans-serif;
+	h1,
+	h2 {
+		font-family: Dessau-Medium, Helvetica, Roboto, Arial, sans-serif !important;
 	}
-	h2,
+
+	a,
 	h3,
 	h4,
 	h5,
 	h6 {
-		font-family: Dessau-Medium, Helvetica, Roboto, Arial, sans-serif;
+		font-family: Sebastian-Light, Helvetica, Roboto, Arial, sans-serif;
 	}
+
 	h1 {
 		font-size: var(--text-2xl);
 	}
@@ -39,6 +42,9 @@ body {
 		padding: 1rem 2rem !important;
 		border-radius: 10px !important;
 		font-size: 1rem !important;
+	}
+	a {
+		color: white !important;
 	}
 	p {
 		margin-bottom: 20px;
