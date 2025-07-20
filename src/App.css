@@ -3,8 +3,21 @@
 html,
 body {
 	padding: 0;
-	/* min-height: 100vh;
-	box-sizing: border-box; */
+}
+@theme {
+	/* orange color set */
+	--color-slugorange-100: #cd861e;
+	--color-slugornage-200: #d9420b;
+	--color-slugorange-300: #ae3509;
+
+	/* green color set */
+	--color-sluggreen-100: #ccd99c;
+	--color-sluggreen-200: #8da633;
+	--color-sluggreen-300: #798f2c;
+
+
+	/* blue color set */
+	--color-slugblue-100: #3498db;
 }
 
 @layer base {
@@ -36,17 +49,5 @@ body {
 	p,
 	button {
 		font-family: Sebastian-Light, Helvetica, Roboto, Arial, sans-serif !important;
-	}
-	button {
-		/* border: 1px solid white!important; */
-		padding: 1rem 2rem !important;
-		border-radius: 10px !important;
-		font-size: 1rem !important;
-	}
-	a {
-		color: white !important;
-	}
-	p {
-		margin-bottom: 20px;
 	}
 }

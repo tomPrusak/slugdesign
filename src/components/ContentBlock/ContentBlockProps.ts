@@ -13,6 +13,9 @@ export interface SettingsProps {
 	center?: boolean;
 	left?: boolean;
 	right?: boolean;
+	txtCenter?:boolean;
+	colsTwo?:boolean;
+	oragneColor?:boolean;
 }
 export interface ContentProps {
 	value: string;

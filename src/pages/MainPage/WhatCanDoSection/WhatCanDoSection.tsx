@@ -17,7 +17,10 @@ function WhatCanDoSection(props: ContentBlockProps) {
 
 			<ContentBlock
 				header={props.header}
-				subHeader={props.subHeader}>
+				subHeader={props.subHeader}
+				settings={{colsTwo:true}}
+				>
+				
 				<Hexagon content={props.content}></Hexagon>
 				<Button text="Work With Us"></Button>
 			</ContentBlock>

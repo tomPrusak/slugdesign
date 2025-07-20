@@ -29,7 +29,7 @@ function Header() {
 			<ul className="flex">
 				{navigationData.map((data: HeaderProps) => {
 					return (
-						<li className="p-3 hover:text-amber-300">
+						<li className="p-3 hover:text-amber-300 text-white">
 							<Link
 								to={data.link}
 								target="blank">

@@ -19,7 +19,7 @@ function Hexagon({ content, settings, children }: HexagonProps) {
 								<Link
 									className="relative z-20 content-center"
 									to="https://www.onet.pl">
-									<b>{parse(txt.value)}</b>{' '}
+									<b className='text-white text-md text-2xl '>{parse(txt.value)}</b>{' '}
 								</Link>
 							</div>
                          

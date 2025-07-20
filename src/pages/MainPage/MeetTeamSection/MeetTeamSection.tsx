@@ -18,7 +18,12 @@ function MeetTeamSection(props: ContentBlockProps) {
 				<ContentBlock
 					header={props.header}
 					subHeader={props.subHeader}
-					content={props.content}></ContentBlock>
+					content={props.content}
+					settings={{colsTwo:true}}>
+
+
+
+					</ContentBlock>
 			</div>
 			<RepeatingBlock image={{ src: repeatStones, bgColor: '#111010' }}>
 				<RepeatingBlock

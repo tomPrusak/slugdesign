@@ -10,20 +10,11 @@ function DesDevSection(props: ContentBlockProps) {
 	return (
 		<Fragment>
 			<RepeatingBlock image={{ src: repeatNoise }}>
-				{/* <section className="text-center p-20">
-					<h2>Graphic Design & Web Developing</h2>
-					<p>
-						Slugdesign is a Freelance Graphic Design & Web Developing studio
-						based in Ireland Co.Kerry. We work hard at providing quality web
-						resources, online advertising and clean responsive design. Find us
-						on social media, find us in Kerry
-					</p>
-				</section> */}
-
 				<ContentBlock
 					header={props.header}
 					subHeader={props.subHeader}
-					content={props.content}></ContentBlock>
+					content={props.content}
+					settings={{txtCenter:true}}></ContentBlock>
 
 				<RepeatingBlock
 					image={{ src: repeatTri }}

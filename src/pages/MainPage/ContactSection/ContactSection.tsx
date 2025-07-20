@@ -49,7 +49,11 @@ function ContactSection(props: ContentBlockProps) {
 				<ContentBlock
 					header={props.header}
 					subHeader={props.subHeader}
-					content={props.content}></ContentBlock>
+					content={props.content}>
+
+					<Button text='Start The Business With Us' settings={{oragneColor:true}}></Button>
+
+					</ContentBlock>
 			</RepeatingBlock>
 		</Fragment>
 	);

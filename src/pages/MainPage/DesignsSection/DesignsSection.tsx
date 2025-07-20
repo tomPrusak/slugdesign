@@ -15,7 +15,10 @@ function DesignsSection(props: ContentBlockProps) {
 				<ContentBlock
 					header={props.header}
 					subHeader={props.subHeader}
-					content={props.content}></ContentBlock>
+					content={props.content}
+					>
+					<Button text="Want To See More"></Button>
+				</ContentBlock>
 				<div className="row flex">
 					<div className="bubles flex items-center justify-center">
 						<figure>
