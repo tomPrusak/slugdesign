@@ -21,27 +21,24 @@ function Header() {
 
 	return (
 		<div className="grid grid-cols-4 gap-2 py-20">
-			<nav className="   col-span-4 col-start-2 col-end-4   ">
-				<div className="flex justify-items-start">
+			<nav className="col-span-4 col-start-2 col-end-4">
+				<div className="flex justify-between pb-2">
 					<img
-						className="w-fit "
+						className="w-[232px] h-[44px]  "
 						src={responsiveMac}
 						alt=""
 					/>
-					<ul className="flex">
+					<ul className="self-end flex ">
 						{navigationData.map((data: HeaderProps) => {
 							return (
 								<li className="p-3 hover:text-amber-300 text-white">
-									<Link
-										to={data.link}
-										target="blank">
-										{data.text}
-									</Link>
+									<Link to={data.link}>{data.text}</Link>
 								</li>
 							);
 						})}
 					</ul>
 				</div>
+				<hr className="border-white " />
 			</nav>
 		</div>
 	);
