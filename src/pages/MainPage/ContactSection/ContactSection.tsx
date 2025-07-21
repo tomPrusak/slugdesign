@@ -49,7 +49,8 @@ function ContactSection(props: ContentBlockProps) {
 				<ContentBlock
 					header={props.header}
 					subHeader={props.subHeader}
-					content={props.content}>
+					content={props.content}
+					settings={{txtCenter:true}}>
 
 					<Button text='Start The Business With Us' settings={{oragneColor:true}}></Button>
 
