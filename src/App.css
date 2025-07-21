@@ -15,7 +15,6 @@ body {
 	--color-sluggreen-200: #8da633;
 	--color-sluggreen-300: #798f2c;
 
-
 	/* blue color set */
 	--color-slugblue-100: #3498db;
 }
@@ -50,4 +49,23 @@ body {
 	button {
 		font-family: Sebastian-Light, Helvetica, Roboto, Arial, sans-serif !important;
 	}
+
+	/* ----------------SPECIAL TEXT WRAP------------------------ */
+}
+em {
+	font-style: normal;
+}
+/* Emphasized text */
+
+em.or {
+	color: var(--color-slugorange-100);
+}
+em.or2 {
+	color: var(--color-slugornage-200);
+}
+em.gr {
+	color: var(--color-sluggreen-300);
+}
+em.bl {
+	color: var(--color-slugblue-100);
 }

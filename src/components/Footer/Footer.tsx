@@ -4,7 +4,7 @@ function Footer() {
 	const repeatTri = 'src/assets/images/repTriBlack.png';
 
 	return (
-		<footer className="grid grid-flow-row relative">
+		<footer className="relative">
 			<RepeatingBlock
 				image={{ src: repeatTri }}
 				settings={{
@@ -13,12 +13,14 @@ function Footer() {
 					top: '-38px',
 					zIndex: 50,
 				}}></RepeatingBlock>
-			<div className="bg-black text-center w-screen pt-[60px] pb-[20px]  ">
-				<p>
-					© Drew & Coded by slugdesign. Freelance Design, Kerry 2015. All rights
-					reserved.
-				</p>
-			</div>
+			<section className="grid grid-cols-4 gap-2 py-10 bg-black">
+				<div className="col-span-4 col-start-2 col-end-4 text-center">
+					<p className="text-white">
+						© Drew & Coded by <em className="gr">slugdesign</em>. Freelance
+						Design, Kerry 2015. All rights reserved.
+					</p>
+				</div>
+			</section>
 		</footer>
 	);
 }

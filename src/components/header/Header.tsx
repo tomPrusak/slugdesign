@@ -31,7 +31,7 @@ function Header() {
 					<ul className="self-end flex ">
 						{navigationData.map((data: HeaderProps) => {
 							return (
-								<li className="p-3 hover:text-amber-300 text-white">
+								<li className="p-3 transition ease-in-out duration-500 hover:text-sluggreen-200 hover:text-shadow-lg text-white">
 									<Link to={data.link}>{data.text}</Link>
 								</li>
 							);
